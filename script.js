@@ -1,20 +1,12 @@
-function sendMessage() {
-    var username = document.getElementById("username").value;
-    var messageText = document.getElementById("message").value;
+document.addEventListener("DOMContentLoaded", function() {
+    // Cette fonction sera exécutée une fois que le DOM est chargé
 
-    if (username && messageText) {
-        var messageList = document.getElementById("message-list");
+    // Récupérez l'élément image par son ID
+    var gifImage = document.getElementById("gifImage");
 
-        var messageDiv = document.createElement("div");
-        messageDiv.className = "message";
-        messageDiv.innerHTML = `<strong>${username}:</strong> ${messageText}`;
-
-        messageList.appendChild(messageDiv);
-
-        // Efface les champs après l'envoi du message
-        document.getElementById("username").value = "";
-        document.getElementById("message").value = "";
-    } else {
-        alert("Veuillez remplir tous les champs.");
+    // Vérifiez si l'élément image existe
+    if (gifImage) {
+        // Modifiez la source de l'image pour le GIF
+        gifImage.src = "animation.gif";
     }
-}
+});
