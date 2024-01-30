@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Vérifiez si l'élément image existe
     if (gifImage) {
         // Modifiez la source de l'image pour le GIF
-        gifImage.src = "animation.gif";
+        gifImage.src = "bendygif.gif";
     }
 });
